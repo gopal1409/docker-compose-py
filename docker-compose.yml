@@ -2,7 +2,7 @@ version: "3.9"
 services:
   web: #frontend
     build: . #it will run docker build and using the docker file it will create your python image and run it and publish in port 5000
-    ports:
+    ports: #it will create a container and expose in port 5000
       - "5000:5000"
   redis: #backend
     image: "redis:alpine"
