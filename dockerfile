@@ -1,5 +1,4 @@
-FROM python:3.7-alpine #build an image starting with python 3.7 image
-WORKDIR /code 
+FROM python:3.7-alpine
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 RUN apk add --no-chache gcc musl-dev linux-headers
